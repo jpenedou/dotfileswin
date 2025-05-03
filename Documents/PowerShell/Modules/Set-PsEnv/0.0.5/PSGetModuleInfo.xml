@@ -1,0 +1,140 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Set-PsEnv</S>
+      <Version N="Version">0.0.5</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Exports environment variable from the .env file to the current process.</S>
+      <S N="Author">rajiv</S>
+      <S N="CompanyName">rajivharris</S>
+      <S N="Copyright">(c) rajiv. All rights reserved.</S>
+      <DT N="PublishedDate">2020-07-03T20:08:31+02:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2022-11-14T08:10:47.5370218+01:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://github.com/rajivharris/Set-PsEnv/blob/master/LICENSE</URI>
+      <URI N="ProjectUri">https://github.com/rajivharris/Set-PsEnv</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>dotenv</S>
+          <S>.env</S>
+          <S>set-psenv</S>
+          <S>psenv</S>
+          <S>direnv</S>
+          <S>env</S>
+          <S>environment</S>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">DscResource</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Set-PsEnv</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Set-PsEnv</S>
+              </LST>
+            </Obj>
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">Security Fixes. Please update to this version. Thanks Jason for pointing out this issue.</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="9">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">(c) rajiv. All rights reserved.</S>
+          <S N="description">Exports environment variable from the .env file to the current process.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="releaseNotes">Security Fixes. Please update to this version. Thanks Jason for pointing out this issue.</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">19483</S>
+          <S N="downloadCount">20141</S>
+          <S N="packageSize">5309</S>
+          <S N="published">03/07/2020 20:08:31 +02:00</S>
+          <S N="created">03/07/2020 20:08:31 +02:00</S>
+          <S N="lastUpdated">31/10/2022 22:28:18 +01:00</S>
+          <S N="tags">dotenv .env set-psenv psenv direnv env environment PSModule PSFunction_Set-PsEnv PSCommand_Set-PsEnv PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2022-10-31T22:28:18Z</S>
+          <S N="NormalizedVersion">0.0.5</S>
+          <S N="Authors">rajiv</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Set-PsEnv.nuspec|LICENSE|README.md|Set-PsEnv.psd1|Set-PsEnv.psm1</S>
+          <S N="GUID">8920d878-d363-4b50-a934-512df95e6ec4</S>
+          <S N="PowerShellVersion">5.0</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\jpenedo\Documents\PowerShell\Modules\Set-PsEnv\0.0.5</S>
+    </MS>
+  </Obj>
+</Objs>
