@@ -1,5 +1,12 @@
-[plugin]
-deps = []
+[[plugin.deps]]
+use = "yazi-rs/plugins:jump-to-char"
+rev = "864a021"
+hash = "368680a4fbb900b47939db92ccc1274d"
+
+[[plugin.deps]]
+use = "dedukun/relative-motions"
+rev = "ce2e890"
+hash = "1c1fc68fc0c8728e15ba0fa41716ec1e"
 
 [[flavor.deps]]
 use = "BennyOe/tokyo-night"
