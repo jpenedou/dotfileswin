@@ -1,0 +1,122 @@
+{
+    "mdb.confirmRunAll": false,
+    "mssql.connections": [
+        {
+            "server": "tunatest",
+            "database": "",
+            "authenticationType": "SqlLogin",
+            "user": "sa",
+            "password": "",
+            "emptyPasswordInput": false,
+            "savePassword": true,
+            "profileName": "TUNATEST"
+        },
+        {
+            "server": "95.60.250.148",
+            "database": "",
+            "authenticationType": "SqlLogin",
+            "user": "admin_user",
+            "password": "",
+            "emptyPasswordInput": false,
+            "savePassword": true,
+            "profileName": "BIGEYE"
+        },
+        {
+            "server": "172.16.0.190",
+            "database": "",
+            "authenticationType": "SqlLogin",
+            "user": "admin_user",
+            "password": "",
+            "emptyPasswordInput": false,
+            "savePassword": true,
+            "profileName": "YELLOWFIN"
+        },
+        {
+            "server": "tunadev",
+            "database": "DB_BUSI_V2_DEV",
+            "authenticationType": "SqlLogin",
+            "user": "sa",
+            "password": "",
+            "emptyPasswordInput": false,
+            "savePassword": true,
+            "profileName": "TUNADEV",
+            "encrypt": "Mandatory",
+            "trustServerCertificate": true,
+            "connectTimeout": 15,
+            "applicationName": "vscode-mssql"
+        }
+    ],
+    "mongodbLanguageServer.trace.server": {
+    
+    },
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "editor.minimap.enabled": false,
+    "terminal.integrated.fontFamily": "FiraCode Nerd Font",
+    // "terminal.integrated.fontFamily": "Cascadia Code", //por defecto
+    // "terminal.integrated.fontSize": 14,
+    "editor.fontFamily": "Fira Code",
+    //"editor.fontFamily": "Cascadia Code",
+    // "editor.fontFamily": "CaskaydiaCove NF",
+    "editor.fontLigatures": true,
+    "rest-client.previewResponseInUntitledDocument": true,
+    "rest-client.previewResponsePanelTakeFocus": false,
+    "terminal.integrated.fontWeight": "normal",
+    "editor.accessibilitySupport": "off",
+    "remote.SSH.remotePlatform": {
+        "172.16.0.207": "linux"
+    },
+    "editor.cursorBlinking": "expand",
+    "editor.guides.bracketPairs": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "csharp.suppressBuildAssetsNotification": true,
+    "csharp.suppressDotnetRestoreNotification": true,
+    "omnisharp.disableMSBuildDiagnosticWarning": true,
+    "[python]": {
+        "editor.formatOnType": true,
+    },
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.codeLens.scopes": [
+        "document",
+        "containers",
+        "blocks"
+    ],
+    "dotnet-test-explorer.testProjectPath": "./*Test",
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.enabled": false,
+    "editor.lineNumbers": "relative",
+    "debug.onTaskErrors": "showErrors",
+    "workbench.colorCustomizations": {
+
+        "panel.border": "#673AB7",
+        "panelTitle.activeBorder": "#673AB7",
+        "editor.lineHighlightBackground": "#303030"
+    },
+    "workbench.iconTheme": "vscode-icons",
+    "vscode-neovim.neovimExecutablePaths.win32": "C:\\tools\\neovim\\nvim-win64\\bin\\nvim.exe",
+    "playwright.reuseBrowser": true,
+    "playwright.showTrace": false,
+    "gitlens.codeLens.enabled": false,
+    "vscode-neovim.mouseSelectionStartVisualMode": true,
+    "workbench.colorTheme": "Visual Studio 2019 Dark plus syntax",
+    "editor.renderLineHighlight": "all",
+    "workbench.sideBar.location": "right",
+    "dotnet.server.useOmnisharp": true,
+    "errorLens.enabledDiagnosticLevels": [
+        "error",
+        "warning"
+    ],
+    "razor.trace": "Messages",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "[html]": {
+        
+        "editor.suggest.insertMode": "replace",
+        "editor.formatOnType": true
+    },
+    "[javascriptreact]": {
+        
+    },
+    "keyboard.dispatch": "keyCode",
+    "files.autoSave": "afterDelay"
+}

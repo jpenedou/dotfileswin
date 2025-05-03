@@ -1,0 +1,186 @@
+// Coloque sus atajos de teclado en este archivo para sobreescribir los valores predeterminadosauto[]
+[
+    {
+        "key": "ctrl+shift+t",
+        "command": "-workbench.action.reopenClosedEditor"
+    },
+    {
+        "key": "ctrl+shift+t",
+        "command": "workbench.action.tasks.runTask"
+    },
+    // {
+    //     "key": "ctrl+h",
+    //     "command": "workbench.action.focusLeftGroup",
+    //     "when": "editorTextFocus && neovim.init && neovim.mode != 'insert'"
+    // },
+    // {
+    //     "key": "ctrl+l",
+    //     "command": "workbench.action.focusRightGroup",
+    //     "when": "editorTextFocus &&neovim.init && neovim.mode != 'insert'"
+    // },
+    // {
+    //     "key": "ctrl+k",
+    //     "command": "workbench.action.focusAboveGroup",
+    //     "when": "editorTextFocus && neovim.init && neovim.mode != 'insert'"
+    // },
+    // {
+    //     "key": "ctrl+j",
+    //     "command": "workbench.action.focusBelowGroup",
+    //     "when": "editorTextFocus && neovim.init && neovim.mode != 'insert'"
+    // },
+    {
+        "key": "ctrl+alt+space",
+        "command": "whichkey.show",
+        "when": "editorTextFocus && neovim.init && neovim.mode != 'insert'"
+    },
+    //https://gist.github.com/sagittaros/a632a853e6e3f78c64f1b4c017217b30
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.navigateLeft",
+        "when": "neovim.mode == 'normal'"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.navigateUp"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.navigateDown",
+        "when": "neovim.mode == 'normal'"
+	},
+    {
+        "key": "ctrl+h",
+        "command": "-editor.action.startFindReplaceAction",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "-workbench.action.togglePanel"
+    },
+    //https://github.com/vscode-neovim/vscode-neovim/issues/936
+//	{
+//
+//		"key": "ctrl+j",
+//		"command": "editor.action.insertSnippet",
+//		"when": "editorTextFocus && neovim.mode == 'insert'",
+//		"args": {
+//			"snippet": "\n"
+//		}
+//	},
+    //
+    //https://edwardsh.in/dev/vscode/#keybindings
+    // {
+    //     "key": "shift+j",
+    //     "command": "workbench.action.nextEditorInGroup",
+    //     "when": "editorFocus && neovim.mode == 'normal'"
+    // },
+    // {
+    //     "key": "shift+k",
+    //     "command": "workbench.action.previousEditorInGroup",
+    //     "when": "editorFocus && neovim.mode == 'normal'"
+    // },
+    {
+        "key": "alt+h",
+        "command": "workbench.action.previousEditorInGroup",
+        "when": "editorFocus && neovim.mode == 'normal'"
+    },
+    {
+        "key": "alt+l",
+        "command": "workbench.action.nextEditorInGroup",
+        "when": "editorFocus && neovim.mode == 'normal'"
+    },
+    {
+        "key": "alt+j",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorFocus && neovim.mode == 'normal'"
+    },
+    {
+        "key": "alt+k",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorFocus && neovim.mode == 'normal'"
+    },
+    {
+        "key": "ctrl+shift+3",
+        "command": "workbench.action.showAllSymbols"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "-workbench.action.showAllSymbols"
+    },
+    {
+        "key": "ctrl+shift+2",
+        "command": "workbench.action.gotoSymbol"
+    },
+    {
+        "key": "ctrl+shift+o",
+        "command": "-workbench.action.gotoSymbol"
+    },
+    {
+        "key": "ctrl+alt+b",
+        "command": "-workbench.action.toggleAuxiliaryBar"
+    },
+    {
+        "key": "ctrl+shift+oem_4",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "workbench.action.increaseViewHeight"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "workbench.action.decreaseViewHeight"
+    },
+    {
+        "key": "ctrl+left",
+        "command": "workbench.action.increaseViewWidth"
+    },
+    {
+        "key": "ctrl+right",
+        "command": "workbench.action.decreaseViewWidth"
+    },
+    {
+        "key": "ctrl+left",
+        "command": "workbench.action.terminal.resizePaneLeft",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "workbench.action.terminal.resizePaneDown",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+right",
+        "command": "workbench.action.terminal.resizePaneRight",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "workbench.action.terminal.resizePaneUp",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "workbench.files.action.focusFilesExplorer"
+    },
+    // {
+    //     "command": "vscode-neovim.compositeEscape1",
+    //     "key": "j",
+    //     "when": "neovim.mode == insert && editorTextFocus",
+    //     "args": "j"
+    // },
+    // {
+    //     "command": "vscode-neovim.compositeEscape1",
+    //     "key": "k",
+    //     "when": "neovim.mode == insert && editorTextFocus",
+    //     "args": "k"
+    // }
+]
