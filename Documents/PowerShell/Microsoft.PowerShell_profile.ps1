@@ -42,7 +42,7 @@ function lgd {
     lazygit
     Remove-Item Env:\GIT_DIR, Env:\GIT_WORK_TREE
 }
-function yd {
+function yzd {
     $tmp = [System.IO.Path]::GetTempFileName()
     yazi $args --cwd-file="$tmp"
     $cwd = Get-Content -Path $tmp -Encoding UTF8
@@ -52,6 +52,6 @@ function yd {
     Remove-Item -Path $tmp
 }
 
-Set-Alias -Name y -Value yazi
+Set-Alias -Name yz -Value yazi
 
 $env:YAZI_FILE_ONE  = "C:\Program Files\Git\usr\bin\file.exe"
