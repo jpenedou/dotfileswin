@@ -8,6 +8,21 @@ use = "dedukun/relative-motions"
 rev = "ce2e890"
 hash = "1c1fc68fc0c8728e15ba0fa41716ec1e"
 
+[[plugin.deps]]
+use = "llanosrocas/yaziline"
+rev = "1342efe"
+hash = "33ec7d4f35d2779afccf709a50bc78c0"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:mime-ext"
+rev = "864a021"
+hash = "ce81a1cfd1cf4904e8dac2bbf131b2d9"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:smart-enter"
+rev = "864a021"
+hash = "2d3c17251b47e9e59535247ad8013814"
+
 [[flavor.deps]]
 use = "BennyOe/tokyo-night"
 rev = "695dac6"
