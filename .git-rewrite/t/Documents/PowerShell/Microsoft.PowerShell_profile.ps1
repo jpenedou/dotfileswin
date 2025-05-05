@@ -21,11 +21,7 @@ $env:_PSFZF_FZF_DEFAULT_OPTS = "$env:FZF_DEFAULT_OPTS"
 
 Import-Module -Name Terminal-Icons
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\pure.omp.json" | Invoke-Expression
-Set-Alias lvim 'C:\Users\jpenedo\.local\bin\lvim.ps1'
 
-
-Function f_pistol { wsl ~/go/bin/pistol }
-Set-Alias -name pistol -value f_pistol
 
 # WezTerm, Powershell colores de los parámetros
 Set-PSReadLineOption -Colors @{ Parameter = '#999999' }
