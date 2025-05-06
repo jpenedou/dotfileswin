@@ -8,32 +8,11 @@
         "key": "ctrl+shift+t",
         "command": "workbench.action.tasks.runTask"
     },
-    // {
-    //     "key": "ctrl+h",
-    //     "command": "workbench.action.focusLeftGroup",
-    //     "when": "editorTextFocus && neovim.init && neovim.mode != 'insert'"
-    // },
-    // {
-    //     "key": "ctrl+l",
-    //     "command": "workbench.action.focusRightGroup",
-    //     "when": "editorTextFocus &&neovim.init && neovim.mode != 'insert'"
-    // },
-    // {
-    //     "key": "ctrl+k",
-    //     "command": "workbench.action.focusAboveGroup",
-    //     "when": "editorTextFocus && neovim.init && neovim.mode != 'insert'"
-    // },
-    // {
-    //     "key": "ctrl+j",
-    //     "command": "workbench.action.focusBelowGroup",
-    //     "when": "editorTextFocus && neovim.init && neovim.mode != 'insert'"
-    // },
     {
-        "key": "ctrl+alt+space",
+        "key": "space",
         "command": "whichkey.show",
         "when": "editorTextFocus && neovim.init && neovim.mode != 'insert'"
     },
-    //https://gist.github.com/sagittaros/a632a853e6e3f78c64f1b4c017217b30
     {
         "key": "ctrl+h",
         "command": "workbench.action.navigateLeft",
@@ -61,29 +40,7 @@
         "key": "ctrl+j",
         "command": "-workbench.action.togglePanel"
     },
-    //https://github.com/vscode-neovim/vscode-neovim/issues/936
-//	{
-//
-//		"key": "ctrl+j",
-//		"command": "editor.action.insertSnippet",
-//		"when": "editorTextFocus && neovim.mode == 'insert'",
-//		"args": {
-//			"snippet": "\n"
-//		}
-//	},
-    //
-    //https://edwardsh.in/dev/vscode/#keybindings
-    // {
-    //     "key": "shift+j",
-    //     "command": "workbench.action.nextEditorInGroup",
-    //     "when": "editorFocus && neovim.mode == 'normal'"
-    // },
-    // {
-    //     "key": "shift+k",
-    //     "command": "workbench.action.previousEditorInGroup",
-    //     "when": "editorFocus && neovim.mode == 'normal'"
-    // },
-    {
+   {
         "key": "alt+h",
         "command": "workbench.action.previousEditorInGroup",
         "when": "editorFocus && neovim.mode == 'normal'"
@@ -171,16 +128,4 @@
         "key": "ctrl+shift+e",
         "command": "workbench.files.action.focusFilesExplorer"
     },
-    // {
-    //     "command": "vscode-neovim.compositeEscape1",
-    //     "key": "j",
-    //     "when": "neovim.mode == insert && editorTextFocus",
-    //     "args": "j"
-    // },
-    // {
-    //     "command": "vscode-neovim.compositeEscape1",
-    //     "key": "k",
-    //     "when": "neovim.mode == insert && editorTextFocus",
-    //     "args": "k"
-    // }
 ]
