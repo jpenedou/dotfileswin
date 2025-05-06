@@ -22,11 +22,11 @@ $env:_PSFZF_FZF_DEFAULT_OPTS = "$env:FZF_DEFAULT_OPTS"
 Import-Module -Name Terminal-Icons
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\pure.omp.json" | Invoke-Expression
 
+Invoke-Expression (& { (zoxide init powershell | Out-String) })
+
 
 # WezTerm, Powershell colores de los parámetros
 Set-PSReadLineOption -Colors @{ Parameter = '#999999' }
-
-Invoke-Expression (& { (zoxide init powershell | Out-String) })
 
 function gitd {
     git --git-dir=$HOME\.dotfiles --work-tree=$HOME $args
@@ -48,6 +48,7 @@ function yzd {
     Remove-Item -Path $tmp
 }
 
-Set-Alias -Name yz -Value yazi
-
 $env:YAZI_FILE_ONE  = "C:\Program Files\Git\usr\bin\file.exe"
+
+Set-Alias -Name yz -Value yazi
+Set-Alias -Name v -Value nvim
