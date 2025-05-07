@@ -52,3 +52,4 @@ $env:YAZI_FILE_ONE  = "C:\Program Files\Git\usr\bin\file.exe"
 
 Set-Alias -Name yz -Value yazi
 Set-Alias -Name v -Value nvim
+Set-Alias -Name lg -Value lazygit
