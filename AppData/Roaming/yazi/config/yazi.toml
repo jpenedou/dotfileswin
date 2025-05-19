@@ -3,3 +3,8 @@ id   = "mime"
 name = "*"
 run  = "mime-ext"
 prio = "high"
+
+[preview]
+# Change them to your desired values
+max_width  = 1920
+max_height = 1080
