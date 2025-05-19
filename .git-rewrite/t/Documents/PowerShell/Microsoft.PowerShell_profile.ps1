@@ -28,7 +28,7 @@ Invoke-Expression (& { (zoxide init powershell | Out-String) })
 # WezTerm, Powershell colores de los parámetros
 Set-PSReadLineOption -Colors @{ Parameter = '#999999' }
 
-function gitd {
+function dotfiles {
     git --git-dir=$HOME\.dotfiles --work-tree=$HOME $args
 }
 
