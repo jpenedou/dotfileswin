@@ -53,3 +53,9 @@ $env:YAZI_FILE_ONE  = "C:\Program Files\Git\usr\bin\file.exe"
 Set-Alias -Name yz -Value yazi
 Set-Alias -Name v -Value nvim
 Set-Alias -Name lg -Value lazygit
+
+# Para ouch.exe
+# Nota: se ha compilado con
+# $env:RUSTFLAGS = "-C link-args=-Wl,--allow-multiple-definition"
+# cargo install ouch
+$env:Path += ";$env:USERPROFILE\.cargo\bin"
