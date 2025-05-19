@@ -1,4 +1,9 @@
 [[manager.prepend_keymap]]
+on   = "e"
+run  = 'shell --block -- nvim %*'
+desc = "Edit with Nvim"
+
+[[manager.prepend_keymap]]
 on   = "f"
 run  = "plugin jump-to-char"
 desc = "Jump to char"
