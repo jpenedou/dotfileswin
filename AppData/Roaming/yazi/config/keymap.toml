@@ -78,3 +78,8 @@ desc = "Maximize or restore the preview pane"
 on = ["C"]
 run = "plugin ouch"
 desc = "Compress with ouch"
+
+[[manager.prepend_keymap]]
+on   = [ "g", "i" ]
+run  = "plugin lazygit"
+desc = "run lazygit"
