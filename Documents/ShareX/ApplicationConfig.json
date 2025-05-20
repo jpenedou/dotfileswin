@@ -872,14 +872,6 @@
   "HistoryCheckURL": false,
   "RecentTasks": [
     {
-      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2023-12\\chrome_XGVM4f7ll4.png",
-      "URL": null,
-      "ThumbnailURL": null,
-      "DeletionURL": null,
-      "ShortenedURL": null,
-      "Time": "2023-12-14T12:58:07.7798538Z"
-    },
-    {
       "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2023-12\\chrome_PQxGntFW2E.png",
       "URL": null,
       "ThumbnailURL": null,
@@ -950,6 +942,14 @@
       "DeletionURL": null,
       "ShortenedURL": null,
       "Time": "2025-04-04T07:53:51.5176351Z"
+    },
+    {
+      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2025-05\\Teams_xVu72fQbec.png",
+      "URL": null,
+      "ThumbnailURL": null,
+      "DeletionURL": null,
+      "ShortenedURL": null,
+      "Time": "2025-05-19T10:46:25.1248032Z"
     }
   ],
   "RecentTasksSave": true,
