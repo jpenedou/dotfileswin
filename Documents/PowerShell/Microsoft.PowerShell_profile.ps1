@@ -58,3 +58,5 @@ Set-Alias -Name lg -Value lazygit
 # $env:RUSTFLAGS = "-C link-args=-Wl,--allow-multiple-definition"
 # cargo install ouch
 $env:Path += ";$env:USERPROFILE\.cargo\bin"
+
+Import-Module posh-sshell
