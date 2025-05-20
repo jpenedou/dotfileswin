@@ -24,7 +24,6 @@ oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\pure.omp.json" | Invoke-Exp
 
 Invoke-Expression (& { (zoxide init powershell | Out-String) })
 
-
 # WezTerm, Powershell colores de los parámetros
 Set-PSReadLineOption -Colors @{ Parameter = '#999999' }
 
