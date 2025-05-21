@@ -1,0 +1,31 @@
+[core]
+	editor = \"C:/Program Files (x86)/GitExtensions/GitExtensions.exe\" fileeditor
+	sshCommand = \"C:/Windows/System32/OpenSSH/ssh.exe\"
+[pull]
+	rebase = false
+[fetch]
+	prune = false
+[rebase]
+	autoStash = false
+[diff]
+	guitool = vscode
+[difftool "winmerge"]
+	path = C:/Program Files (x86)/WinMerge/winmergeu.exe
+	cmd = \"C:/Program Files (x86)/WinMerge/winmergeu.exe\" -e -u \"$LOCAL\" \"$REMOTE\"
+[difftool "vscode"]
+	path = C:/Program Files/Microsoft VS Code/code.exe
+	cmd = \"C:/Program Files/Microsoft VS Code/code.exe\" --wait --diff \"$LOCAL\" \"$REMOTE\"
+[merge]
+	guitool = winmerge
+[mergetool "winmerge"]
+	path = C:/Program Files (x86)/WinMerge/winmergeu.exe
+	cmd = \"C:/Program Files (x86)/WinMerge/winmergeu.exe\" -e -u  -wl -wr -fm -dl \"Mine: $LOCAL\" -dm \"Merged: $BASE\" -dr \"Theirs: $REMOTE\" \"$LOCAL\" \"$BASE\" \"$REMOTE\" -o \"$MERGED\"
+[credential "http://gitlab"]
+	provider = generic
+[user]
+	name = Jose Antonio Penedo
+	email = jpenedo@marineinstruments.es
+[safe]
+	directory = /mnt/mypassport/git/dotfileswin
+	directory = /mnt/mypassport/git/dotfileswin
+	directory = /mnt/mypassport/git/dotfileswin
