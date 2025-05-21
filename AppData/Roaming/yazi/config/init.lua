@@ -1,7 +1,7 @@
-require("zoxide"):setup({update_db = true})
-require("relative-motions"):setup({ show_numbers="relative", show_motion = true, enter_mode ="first" })
+require("zoxide"):setup({ update_db = true })
+require("relative-motions"):setup({ show_numbers = "relative", show_motion = true, enter_mode = "first" })
 require("yaziline"):setup()
-require("mime-ext"):setup {
+require("mime-ext"):setup({
 	-- Expand the existing filename database (lowercase), for example:
 	with_files = {
 		makefile = "text/makefile",
@@ -16,5 +16,6 @@ require("mime-ext"):setup {
 
 	-- If the mime-type is not in both filename and extension databases,
 	-- then fallback to Yazi's preset `mime` plugin, which uses `file(1)`
-	fallback_file1 = false,
-}
+	fallback_file1 = true,
+})
+
