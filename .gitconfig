@@ -25,3 +25,6 @@
 [user]
 	name = Jose Antonio Penedo
 	email = jpenedo@marineinstruments.es
+[safe]
+	directory = C:/Users/japenedo/AppData/Local/nvim-data/lazy/*
+	directory = d:\\git\\dotfileswin\\
