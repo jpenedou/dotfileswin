@@ -82,4 +82,9 @@ desc = "Compress with ouch"
 [[manager.prepend_keymap]]
 on   = [ "g", "i" ]
 run  = "plugin lazygit"
-desc = "run lazygit"
+desc = "Run lazygit"
+
+[[manager.prepend_keymap]]
+on   = [ "g", "l" ]
+run  = "shell --block -- pwsh -c lgd"
+desc = "Run lazygit in dotfiles"
