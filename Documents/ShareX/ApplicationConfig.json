@@ -653,7 +653,6 @@
   "AutoCheckUpdate": true,
   "UpdateChannel": "Release",
   "CheckPreReleaseUpdates": false,
-  "UseCustomTheme": true,
   "Themes": [
     {
       "Name": "Dark",
@@ -872,84 +871,84 @@
   "HistoryCheckURL": false,
   "RecentTasks": [
     {
-      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2023-12\\chrome_PQxGntFW2E.png",
-      "URL": null,
-      "ThumbnailURL": null,
-      "DeletionURL": null,
-      "ShortenedURL": null,
-      "Time": "2023-12-14T12:58:39.6600839Z"
-    },
-    {
-      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2023-12\\chrome_GfAYz6reZM.png",
-      "URL": null,
-      "ThumbnailURL": null,
-      "DeletionURL": null,
-      "ShortenedURL": null,
-      "Time": "2023-12-14T12:59:38.7287353Z"
-    },
-    {
-      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2023-12\\chrome_QkUA8tj2mr.png",
-      "URL": null,
-      "ThumbnailURL": null,
-      "DeletionURL": null,
-      "ShortenedURL": null,
-      "Time": "2023-12-14T20:22:15.1652733Z"
-    },
-    {
-      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2024-01\\chrome_D7FiJfrOnD.png",
-      "URL": null,
-      "ThumbnailURL": null,
-      "DeletionURL": null,
-      "ShortenedURL": null,
-      "Time": "2024-01-03T16:15:57.1506034Z"
-    },
-    {
-      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2024-01\\chrome_xJrdE2mRAD.png",
-      "URL": null,
-      "ThumbnailURL": null,
-      "DeletionURL": null,
-      "ShortenedURL": null,
-      "Time": "2024-01-08T07:26:17.9446469Z"
-    },
-    {
-      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2024-01\\chrome_BcPlFVeAih.png",
-      "URL": null,
-      "ThumbnailURL": null,
-      "DeletionURL": null,
-      "ShortenedURL": null,
-      "Time": "2024-01-08T07:26:58.1901641Z"
-    },
-    {
-      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2024-01\\chrome_sziEhfHt02.png",
-      "URL": null,
-      "ThumbnailURL": null,
-      "DeletionURL": null,
-      "ShortenedURL": null,
-      "Time": "2024-01-09T19:42:03.8394903Z"
-    },
-    {
-      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2024-01\\chrome_MfWdPqNpBA.png",
-      "URL": null,
-      "ThumbnailURL": null,
-      "DeletionURL": null,
-      "ShortenedURL": null,
-      "Time": "2024-01-09T19:51:30.3020169Z"
-    },
-    {
-      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2025-04\\SetupHost_WlysKYzzhD.png",
-      "URL": null,
-      "ThumbnailURL": null,
-      "DeletionURL": null,
-      "ShortenedURL": null,
-      "Time": "2025-04-04T07:53:51.5176351Z"
-    },
-    {
       "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2025-05\\Teams_xVu72fQbec.png",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
       "Time": "2025-05-19T10:46:25.1248032Z"
+    },
+    {
+      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2025-06\\ms-teams_p4DW7K2mkV.png",
+      "URL": null,
+      "ThumbnailURL": null,
+      "DeletionURL": null,
+      "ShortenedURL": null,
+      "Time": "2025-06-04T07:54:17.3579715Z"
+    },
+    {
+      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2025-06\\dfsvc_vZRRcibp0n.png",
+      "URL": null,
+      "ThumbnailURL": null,
+      "DeletionURL": null,
+      "ShortenedURL": null,
+      "Time": "2025-06-04T08:03:23.3923977Z"
+    },
+    {
+      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2025-06\\FrameworkTest_DEV_is9yin9yDx.png",
+      "URL": null,
+      "ThumbnailURL": null,
+      "DeletionURL": null,
+      "ShortenedURL": null,
+      "Time": "2025-06-04T08:05:05.3785208Z"
+    },
+    {
+      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2025-06\\FrameworkTest_DEV_8vvIP6jvOQ.png",
+      "URL": null,
+      "ThumbnailURL": null,
+      "DeletionURL": null,
+      "ShortenedURL": null,
+      "Time": "2025-06-04T08:08:18.197877Z"
+    },
+    {
+      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2025-06\\explorer_IkgoYjEd63.png",
+      "URL": null,
+      "ThumbnailURL": null,
+      "DeletionURL": null,
+      "ShortenedURL": null,
+      "Time": "2025-06-04T08:11:11.373952Z"
+    },
+    {
+      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2025-06\\firefox_Cmfnwn3oMM.png",
+      "URL": null,
+      "ThumbnailURL": null,
+      "DeletionURL": null,
+      "ShortenedURL": null,
+      "Time": "2025-06-04T11:25:01.6433121Z"
+    },
+    {
+      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2025-06\\firefox_sJTIG3J6nT.png",
+      "URL": null,
+      "ThumbnailURL": null,
+      "DeletionURL": null,
+      "ShortenedURL": null,
+      "Time": "2025-06-04T11:26:35.4194483Z"
+    },
+    {
+      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2025-06\\FrameworkTest_DEV_UV4PgJL9iD.png",
+      "URL": null,
+      "ThumbnailURL": null,
+      "DeletionURL": null,
+      "ShortenedURL": null,
+      "Time": "2025-06-04T11:30:40.851767Z"
+    },
+    {
+      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2025-06\\OUTLOOK_wM4mOjqJyv.png",
+      "URL": null,
+      "ThumbnailURL": null,
+      "DeletionURL": null,
+      "ShortenedURL": null,
+      "Time": "2025-06-06T07:31:46.9962563Z"
     }
   ],
   "RecentTasksSave": true,
@@ -1080,5 +1079,5 @@
   "DropAlignment": "BottomRight",
   "DropOpacity": 100,
   "DropHoverOpacity": 255,
-  "ApplicationVersion": "17.0.0"
+  "ApplicationVersion": "17.1.0"
 }
