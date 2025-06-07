@@ -9,7 +9,8 @@
             "password": "",
             "emptyPasswordInput": false,
             "savePassword": true,
-            "profileName": "TUNATEST"
+            "profileName": "TUNATEST",
+            "id": "D1B1E97C-B714-4E4C-9DEE-F7F57643C332"
         },
         {
             "server": "95.60.250.148",
@@ -19,7 +20,8 @@
             "password": "",
             "emptyPasswordInput": false,
             "savePassword": true,
-            "profileName": "BIGEYE"
+            "profileName": "BIGEYE",
+            "id": "E7112C3C-1533-4B62-B9F8-9489936DA49E"
         },
         {
             "server": "172.16.0.190",
@@ -29,7 +31,8 @@
             "password": "",
             "emptyPasswordInput": false,
             "savePassword": true,
-            "profileName": "YELLOWFIN"
+            "profileName": "YELLOWFIN",
+            "id": "092BB11A-F84A-4D83-B84D-EACD355AC5EF"
         },
         {
             "server": "tunadev",
@@ -43,7 +46,8 @@
             "encrypt": "Mandatory",
             "trustServerCertificate": true,
             "connectTimeout": 15,
-            "applicationName": "vscode-mssql"
+            "applicationName": "vscode-mssql",
+            "id": "50AEEBEF-9479-4B06-B128-C08E89C382BA"
         }
     ],
     "mongodbLanguageServer.trace.server": {
@@ -118,5 +122,15 @@
         
     },
     "keyboard.dispatch": "keyCode",
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "mssql.connectionGroups": [
+        {
+            "name": "ROOT",
+            "id": "1A4D0B8E-C623-46BC-BDC6-FE154F34C1F1"
+        }
+    ],
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "always"
+    }
 }
