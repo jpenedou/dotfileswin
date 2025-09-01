@@ -1,0 +1,32 @@
+lastupdatecheck: 0
+recentrepos:
+    - C:\Users\jpenedo
+    - C:\code\git\gitlab\MIRI\iridiumtrafficexporter
+    - C:\code\git\gitlab\ASW\Ansible\DeployConfigs\deploy-configs-desa-dev
+    - C:\code\git\gitlab\Utilities\marine.mqttlogger
+    - C:\code\git\gitlab\ASW\Ansible\DeployConfigs\deploy-configs-testtools-devtest
+    - C:\Users\jpenedo\AppData\Local\gopass\stores\root
+    - C:\code\git\gitlab\FrameworkTest\marine.frameworktest.worker
+    - C:\code\git\gitlab\FrameworkTest\Marine.Frameworktest
+    - C:\code\git\gitlab\IsmpApi
+    - C:\code\git\gitlab\FrameworkTest\marine.frameworktest.backend
+    - C:\code\git\gitlab\FrameworkTest\marine.frameworktest.tuna.validations
+    - C:\code\git\gitlab\FrameworkTest\marine.frameworktest.tuna.validations\NugetsSource\apimsbfilesnetfwk
+    - C:\code\git\gitlab\apimsbfilesnetfwk
+    - C:\code\git\gitlab\FrameworkTest\marine.frameworktest.tuna.validations\NugetsSource\ismpapi
+    - C:\code\git\gitlab\FrameworkTest\marine.frameworktest.tuna.validations\NugetsSource\Marine.FrameworkTest.Common
+    - C:\code\git\gitlab\FrameworkTest\Marine.FrameworkTest.Common
+    - C:\code\git\gitlab\FrameworkTest\marine.frameworktest.backend\NugetsSource\marine.frameworktest.tuna.validations
+    - C:\code\git\gitlab\FrameworkTest\marine.frameworktest.worker\NugetsSource\marine.frameworktest.tuna.validations\NugetsSource\ismpapi
+    - C:\code\git\gitlab\FrameworkTest\marine.frameworktest.worker\NugetsSource\marine.frameworktest.tuna.validations\NugetsSource\Marine.FrameworkTest.Common
+    - C:\code\git\gitlab\FrameworkTest\marine.frameworktest.worker\NugetsSource\marine.frameworktest.tuna.validations
+    - C:\code\git\gitlab\marine.framesparser
+    - C:\code\git\gitlab\FrameworkTest\marine.frameworktest.mass.validations
+    - C:\code\git\gitlab\FrameworkTest\Marine.FrameworkTest.ElasticDataAccess
+    - C:\code\git\gitlab\FrameworkTest\Marine.FrameworkTest.Common.Data
+    - C:\Users\jpenedo\Documents\Obsidian\Jose
+startuppopupversion: 5
+didshowhunkstaginghint: true
+lastversion: 0.54.2
+customcommandshistory: []
+hidecommandlog: false
