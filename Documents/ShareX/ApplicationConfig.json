@@ -13,7 +13,7 @@
     "TextFileDestination": "Dropbox",
     "FileDestination": "Dropbox",
     "URLShortenerDestination": "BITLY",
-    "URLSharingServiceDestination": "Twitter",
+    "URLSharingServiceDestination": "Email",
     "OverrideFTP": false,
     "FTPIndex": 0,
     "OverrideCustomUploader": false,
@@ -129,6 +129,7 @@
       "CaptureShadowOffset": 100,
       "CaptureClientArea": false,
       "CaptureAutoHideTaskbar": false,
+      "CaptureAutoHideDesktopIcons": false,
       "CaptureCustomRegion": "0, 0, 0, 0",
       "CaptureCustomWindow": "",
       "SurfaceOptions": {
@@ -217,7 +218,7 @@
             "AlignmentHorizontal": "Center",
             "AlignmentVertical": "Center",
             "Gradient": false,
-            "Color2": "240, 240, 240",
+            "Color2": "ButtonFace",
             "GradientMode": "Vertical",
             "EnterKeyNewLine": false
           },
@@ -233,7 +234,7 @@
             "AlignmentHorizontal": "Near",
             "AlignmentVertical": "Center",
             "Gradient": false,
-            "Color2": "240, 240, 240",
+            "Color2": "ButtonFace",
             "GradientMode": "Vertical",
             "EnterKeyNewLine": false
           },
@@ -327,6 +328,7 @@
         "StartDelay": 300,
         "AutoScrollTop": false,
         "ScrollDelay": 300,
+        "ScrollMethod": "MouseWheel",
         "ScrollAmount": 2,
         "AutoIgnoreBottomEdge": true,
         "AutoUpload": false,
@@ -644,7 +646,7 @@
   "TaskbarProgressEnabled": true,
   "UseWhiteShareXIcon": false,
   "RememberMainFormPosition": false,
-  "MainFormPosition": "445, 205",
+  "MainFormPosition": "417, 351",
   "RememberMainFormSize": false,
   "MainFormSize": "859, 525",
   "TrayLeftClickAction": "RectangleRegion",
@@ -815,7 +817,6 @@
     "ImageShack",
     "Flickr",
     "Photobucket",
-    "Twitter",
     "Chevereto",
     "Vgyme",
     "CustomImageUploader",
@@ -851,7 +852,6 @@
     "Pushbullet",
     "SendSpace",
     "Localhostr",
-    "Jira",
     "Lambda",
     "Pomf",
     "Uguu",
@@ -871,84 +871,84 @@
   "HistoryCheckURL": false,
   "RecentTasks": [
     {
-      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2025-05\\Teams_xVu72fQbec.png",
+      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2025-08\\ApplicationFrameHost_mdOsCPYplD.png",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
-      "Time": "2025-05-19T10:46:25.1248032Z"
+      "Time": "2025-08-21T10:44:32.7227782Z"
     },
     {
-      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2025-06\\ms-teams_p4DW7K2mkV.png",
+      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2025-08\\ApplicationFrameHost_LLeXiQcFcE.png",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
-      "Time": "2025-06-04T07:54:17.3579715Z"
+      "Time": "2025-08-21T10:44:41.7863034Z"
     },
     {
-      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2025-06\\dfsvc_vZRRcibp0n.png",
+      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2025-08\\firefox_UqUj6dmgYE.png",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
-      "Time": "2025-06-04T08:03:23.3923977Z"
+      "Time": "2025-08-21T11:19:16.7892225Z"
     },
     {
-      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2025-06\\FrameworkTest_DEV_is9yin9yDx.png",
+      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2025-08\\firefox_MRTLLzbCW4.png",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
-      "Time": "2025-06-04T08:05:05.3785208Z"
+      "Time": "2025-08-21T11:53:06.6878744Z"
     },
     {
-      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2025-06\\FrameworkTest_DEV_8vvIP6jvOQ.png",
+      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2025-08\\firefox_pMnknm77mE.png",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
-      "Time": "2025-06-04T08:08:18.197877Z"
+      "Time": "2025-08-21T11:53:44.4023632Z"
     },
     {
-      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2025-06\\explorer_IkgoYjEd63.png",
+      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2025-08\\firefox_Sw2ikZ2ewl.png",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
-      "Time": "2025-06-04T08:11:11.373952Z"
+      "Time": "2025-08-28T07:17:39.6698899Z"
     },
     {
-      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2025-06\\firefox_Cmfnwn3oMM.png",
+      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2025-08\\firefox_TjTTViuqiq.png",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
-      "Time": "2025-06-04T11:25:01.6433121Z"
+      "Time": "2025-08-28T07:28:29.2769519Z"
     },
     {
-      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2025-06\\firefox_sJTIG3J6nT.png",
+      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2025-08\\firefox_L130vX5Xw5.png",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
-      "Time": "2025-06-04T11:26:35.4194483Z"
+      "Time": "2025-08-28T07:32:27.4373445Z"
     },
     {
-      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2025-06\\FrameworkTest_DEV_UV4PgJL9iD.png",
+      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2025-08\\Code_DBNEGxJ8Rg.png",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
-      "Time": "2025-06-04T11:30:40.851767Z"
+      "Time": "2025-08-29T06:19:33.3972638Z"
     },
     {
-      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2025-06\\OUTLOOK_wM4mOjqJyv.png",
+      "FilePath": "C:\\Users\\jpenedo\\Documents\\ShareX\\Screenshots\\2025-09\\firefox_nHMuStC7Pz.png",
       "URL": null,
       "ThumbnailURL": null,
       "DeletionURL": null,
       "ShortenedURL": null,
-      "Time": "2025-06-06T07:31:46.9962563Z"
+      "Time": "2025-09-01T08:52:23.881092Z"
     }
   ],
   "RecentTasksSave": true,
@@ -965,7 +965,8 @@
     },
     "SplitterDistance": 550,
     "RememberSearchText": false,
-    "SearchText": ""
+    "SearchText": "",
+    "Favorites": false
   },
   "ImageHistorySettings": {
     "RememberWindowState": true,
@@ -977,8 +978,10 @@
     "ThumbnailSize": "150, 150",
     "MaxItemCount": 250,
     "FilterMissingFiles": false,
+    "ImageOnly": true,
     "RememberSearchText": false,
-    "SearchText": ""
+    "SearchText": "",
+    "Favorites": false
   },
   "DontShowPrintSettingsDialog": false,
   "PrintSettings": {
@@ -1066,7 +1069,6 @@
   "RotateImageByExifOrientationData": true,
   "PNGStripColorSpaceInformation": false,
   "DisableUpload": false,
-  "AcceptInvalidSSLCertificates": false,
   "URLEncodeIgnoreEmoji": true,
   "ShowUploadWarning": false,
   "ShowMultiUploadWarning": true,
@@ -1079,5 +1081,5 @@
   "DropAlignment": "BottomRight",
   "DropOpacity": 100,
   "DropHoverOpacity": 255,
-  "ApplicationVersion": "17.1.0"
+  "ApplicationVersion": "18.0.1"
 }
