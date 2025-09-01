@@ -1,5 +1,7 @@
 using namespace System.Management.Automation
 
+$env:EDITOR = "nvim"
+
 # UTF8, necesario para PSFzf (Ctrl+t)
 [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
 Set-PsFzfOption -PSReadlineChordReverseHistory 'Ctrl+r'
