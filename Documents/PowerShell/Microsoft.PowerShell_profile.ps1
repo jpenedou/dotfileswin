@@ -47,7 +47,7 @@ function yzd {
     Remove-Item -Path $tmp
 }
 
-$env:YAZI_FILE_ONE  = "C:\Program Files\Git\usr\bin\file.exe"
+$env:YAZI_FILE_ONE = "C:\Program Files\Git\usr\bin\file.exe"
 
 Set-Alias -Name yz -Value yazi
 Set-Alias -Name v -Value nvim
@@ -61,3 +61,13 @@ Set-Alias cat bat
 $env:Path += ";$env:USERPROFILE\.cargo\bin"
 
 Import-Module posh-sshell
+
+# Import the Chocolatey Profile that contains the necessary code to enable
+# tab-completions to function for `choco`.
+# Be aware that if you are missing these lines from your profile, tab completion
+# for `choco` will not function.
+# See https://ch0.co/tab-completion for details.
+$ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
+if (Test-Path($ChocolateyProfile)) {
+    Import-Module "$ChocolateyProfile"
+}
