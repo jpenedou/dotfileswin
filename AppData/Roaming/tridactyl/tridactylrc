@@ -1,0 +1,10 @@
+" General Settings
+set update.lastchecktime 1756706710336
+set configversion 2.0
+set searchurls.gmaps https://www.google.com/maps/search/%s
+set searchurls.confluence https://marine-instruments.atlassian.net/wiki/search?text=%s
+set searchurls.ali https://www.aliexpress.com/wholesale?SearchText=%s
+set searchurls.amazon https://www.amazon.es/s?k=%s
+
+" For syntax highlighting see https://github.com/tridactyl/vim-tridactyl
+" vim: set filetype=tridactyl
