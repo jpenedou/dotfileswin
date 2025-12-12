@@ -69,7 +69,9 @@
     "terminal.integrated.fontWeight": "normal",
     "editor.accessibilitySupport": "off",
     "remote.SSH.remotePlatform": {
-        "172.16.0.207": "linux"
+        "172.16.0.207": "linux",
+        "dockerdev": "linux",
+        "dockertest": "linux"
     },
     "editor.cursorBlinking": "expand",
     "editor.guides.bracketPairs": true,
@@ -136,7 +138,8 @@
         "*": false,
         "plaintext": false,
         "markdown": false,
-        "scminput": false
+        "scminput": false,
+        "csharp": true
     },
     "codeium.enableConfig": {
         "*": true,
@@ -150,5 +153,22 @@
         ]
     },
     "diffEditor.codeLens": true,
-    "git.blame.statusBarItem.enabled": true
+    "git.blame.statusBarItem.enabled": true,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "mdb.mcp.server": "prompt",
+    "[dockercompose]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        },
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "diffEditor.ignoreTrimWhitespace": false
 }
