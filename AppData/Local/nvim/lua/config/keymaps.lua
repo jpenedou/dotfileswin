@@ -10,4 +10,14 @@ if vim.g.vscode then
   vim.keymap.set("v", "gr", function()
     vim.cmd('call VSCodeNotify("editor.action.referenceSearch.trigger")')
   end, opts)
+
+  opts = { desc = "Go to Implementation (VSCode)" }
+
+  vim.keymap.set("n", "gI", function()
+    vim.cmd('call VSCodeNotify("editor.action.goToImplementation")')
+  end, opts)
+
+  vim.keymap.set("v", "gI", function()
+    vim.cmd('call VSCodeNotify("editor.action.goToImplementation")')
+  end, opts)
 end
