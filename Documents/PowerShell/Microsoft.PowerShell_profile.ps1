@@ -13,7 +13,7 @@ set-psfzfOption -EnableAliasFuzzyKillProcess
 set-psfzfOption -EnableAliasFuzzySetLocation
 set-psfzfOption -EnableAliasFuzzySetEverything
 set-psfzfOption -EnableAliasFuzzyGitStatus
-$env:FZF_DEFAULT_OPTS = '--height 100% --layout reverse'
+$env:FZF_DEFAULT_OPTS = '--height 100% --layout reverse --bind=tab:down,shift-tab:up'
 # Recordar que es necesario poner el .exe porque fd es un alias a Invode-FuzzySetLocation
 $env:FZF_DEFAULT_COMMAND = 'fd.exe '
 # La línea de abajo es mucho más lenta que con fd.exe.
@@ -24,7 +24,8 @@ $env:_PSFZF_FZF_DEFAULT_OPTS = "$env:FZF_DEFAULT_OPTS"
 Import-Module -Name Terminal-Icons
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\pure.omp.json" | Invoke-Expression
 
-Invoke-Expression (& { (zoxide init powershell | Out-String) })
+$env:_ZO_FZF_OPTS = $env:FZF_DEFAULT_OPTS
+Invoke-Expression (& { (zoxide init powershell --cmd z | Out-String) })
 
 # WezTerm, Powershell colores de los parámetros
 Set-PSReadLineOption -Colors @{ Parameter = '#999999' }
@@ -54,6 +55,7 @@ $env:YAZI_FILE_ONE = "C:\Program Files\Git\usr\bin\file.exe"
 Set-Alias -Name yz -Value yazi
 Set-Alias -Name v -Value nvim
 Set-Alias -Name lg -Value lazygit
+Set-Alias -Name ldo -Value lazydocker
 Set-Alias cat bat
 
 # Para ouch.exe
