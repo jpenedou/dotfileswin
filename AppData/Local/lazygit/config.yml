@@ -7,27 +7,5 @@ customCommands:
       - type: "menuFromCommand"
         key: "targetremotebranch"
         title: "Select target branch (remote/branch)"
-        command: |
-          powershell.exe -NoProfile -Command "
-            $ErrorActionPreference = 'Stop'
-            $branch = '{{ .SelectedLocalBranch.Name }}'.Trim()
-            $upstream = git for-each-ref --format='%(upstream:short)' \"refs/heads/$branch\"
-            if ([string]::IsNullOrWhiteSpace($upstream)) { exit 1 }
-            $parts = $upstream -split '/'
-            if ($parts.Length -lt 2) { exit 1 }
-            $remote = $parts[0]
-            $remoteBranch = $parts[1..($parts.Length-1)] -join '/'
-            git branch -r --format='%(refname:short)' |
-              Where-Object {
-                $_ -and $_.StartsWith($remote + '/')
-              } |
-              ForEach-Object {
-                $name = $_.Substring($remote.Length + 1)
-                if ($name -ne $remoteBranch) {
-                  Write-Output ($remote + '/' + $name)
-                }
-              } |
-              Sort-Object
-            "
-    command: > 
-      powershell.exe -NoProfile -Command "try { $sourcebranch='{{ .SelectedLocalBranch.Name }}'.Trim(); $targetcombo='{{.Form.targetremotebranch}}'.Trim(); $parts = $targetcombo -split '/'; $remote = $parts[0]; $targetbranch = $parts[1..($parts.Length-1)] -join '/'; $remoteUrl=git remote get-url $remote; $proto='http'; $remoteHost=''; $path=''; if ($remoteUrl -match '^(https?)://([^/]+)/(.+?)(?:\.git)?$') { $proto=$matches[1]; $remoteHost=$matches[2]; $path=$matches[3] } elseif ($remoteUrl -match '^(ssh://)?git@([^/:]+)[:/]([^\s]+?)(?:\.git)?$') { $remoteHost=$matches[2]; $path=$matches[3] -replace ':','/' } else { exit }; $url = $proto + '://' + $remoteHost + '/' + $path + '/-/compare/' + $targetbranch + '...' + $sourcebranch + '?expand=1'; Start-Process -FilePath $url } catch { }"
+        command: powershell.exe -NoProfile -ExecutionPolicy Bypass -File "{{ runCommand "powershell -NoProfile -Command Write-Output $env:LOCALAPPDATA/lazygit" }}/list-remote-upstream-branches.ps1" -SelectedLocalBranch "{{ .SelectedLocalBranch.Name }}"
+    command: powershell.exe -NoProfile -ExecutionPolicy Bypass -File "{{ runCommand "powershell -NoProfile -Command Write-Output $env:LOCALAPPDATA/lazygit" }}/open-gitlab-mr.ps1" -SourceBranch "{{ .SelectedLocalBranch.Name }}" -TargetRemoteBranch "{{.Form.targetremotebranch}}"
