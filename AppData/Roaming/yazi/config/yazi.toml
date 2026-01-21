@@ -1,10 +1,26 @@
 [[plugin.prepend_fetchers]]
 id   = "mime"
-name = "*"
-run  = "mime-ext"
+url  = "local://*"
+run  = "mime-ext.local"
+prio = "high"
+
+[[plugin.prepend_fetchers]]
+id   = "mime"
+url  = "remote://*"
+run  = "mime-ext.remote"
 prio = "high"
 
 [preview]
 # Change them to your desired values
 max_width  = 1920
 max_height = 1080
+
+[[plugin.prepend_fetchers]]
+id  = "git"
+url = "*"
+run = "git"
+
+[[plugin.prepend_fetchers]]
+id  = "git"
+url = "*/"
+run = "git"

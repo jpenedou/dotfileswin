@@ -1,47 +1,47 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:jump-to-char"
-rev = "63f9650"
-hash = "a00000a1d5785fc9295d9a96cb5b3201"
+rev = "de33976"
+hash = "2aada555b792eb4d44dd267097957577"
 
 [[plugin.deps]]
 use = "dedukun/relative-motions"
-rev = "2e3b617"
-hash = "f4916ca2649e1b3997bb4df390e65f32"
-
-[[plugin.deps]]
-use = "llanosrocas/yaziline"
-rev = "e79b067"
-hash = "ad58a4f52683641a152e83bfd7273e1"
+rev = "a603d9e"
+hash = "4841d0db6a2380a16fd8c647fc1d1187"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:mime-ext"
-rev = "63f9650"
-hash = "30bf27ffcc32f385291b3061b4cf36f3"
+rev = "de33976"
+hash = "e72607671ad2a4d3f300c055da73e597"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:smart-enter"
-rev = "63f9650"
-hash = "52f58299e638a16bc1e10bda1f0b295"
+rev = "de33976"
+hash = "c3f5c63722344045822f121efe2d2553"
 
 [[plugin.deps]]
 use = "Lil-Dank/lazygit"
-rev = "7a08a09"
-hash = "5249d156940fa0ee9f00ca148e574eeb"
+rev = "0e56060"
+hash = "9ccd90bbd535b521439af1f504df25c"
 
 [[plugin.deps]]
 use = "Rolv-Apneseth/starship"
-rev = "6a0f3f7"
-hash = "f5173f6b5e99e86cb756b73925a049eb"
+rev = "eca1861"
+hash = "158f863f60b43d077fef3b91e83d6087"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:toggle-pane"
-rev = "63f9650"
-hash = "a65dc998e4742a4f6561623e6154e1b9"
+rev = "de33976"
+hash = "e24c3fe3f4e8eadb66f9cd41da6c9e58"
 
 [[plugin.deps]]
 use = "ndtoan96/ouch"
-rev = "10b4627"
-hash = "2fc187349a4cce4053f3a28a3fb66f00"
+rev = "594b8a2"
+hash = "5a427ce6b5b26c2f51d649c88daad5f4"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:git"
+rev = "de33976"
+hash = "5a87b143d719f768227a0ae0f8a42e08"
 
 [[flavor.deps]]
 use = "BennyOe/tokyo-night"
