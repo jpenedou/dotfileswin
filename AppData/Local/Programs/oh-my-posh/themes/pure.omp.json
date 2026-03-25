@@ -12,14 +12,19 @@
         },
         {
           "foreground": "#81A1C1",
-          "properties": {
-            "style": "full",
-            "mapped_locations_enabled": true
+          "options": {
+            "style": "full"
           },
           "style": "plain",
           "template": "{{ .Path }} ",
           "type": "path"
-        },
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "segments": [
         {
           "foreground": "#6C6C6C",
           "options": {
@@ -33,7 +38,13 @@
           "style": "plain",
           "template": "{{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}<#FFAFD7>*</>{{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
           "type": "git"
-        },
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "segments": [
         {
           "foreground": "#A3BE8C",
           "options": {
@@ -55,7 +66,7 @@
           "foreground_templates": [
             "{{ if gt .Code 0 }}#BF616A{{ end }}"
           ],
-          "properties": {
+          "options": {
             "always_enabled": true
           },
           "style": "plain",
