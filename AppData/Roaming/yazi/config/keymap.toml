@@ -1,4 +1,14 @@
 [[mgr.prepend_keymap]]
+on   = "H"
+run  = "tab_switch -1 --relative"
+desc = "Pestaña anterior"
+
+[[mgr.prepend_keymap]]
+on   = "L"
+run  = "tab_switch 1 --relative"
+desc = "Siguiente pestaña"
+
+[[mgr.prepend_keymap]]
 on   = "e"
 run  = 'shell --block -- nvim %*'
 desc = "Edit with Nvim"
