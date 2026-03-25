@@ -9,3 +9,9 @@ set searchurls.gitlab http://gitlab/search?search=%s
 
 " For syntax highlighting see https://github.com/tridactyl/vim-tridactyl
 " vim: set filetype=tridactyl
+
+" Keybindings
+bind H tabprev
+bind L tabnext
+bind J back
+bind K forward
