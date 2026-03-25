@@ -22,7 +22,7 @@ $env:FZF_CTRL_T_COMMAND = "$env:FZF_DEFAULT_COMMAND"
 $env:_PSFZF_FZF_DEFAULT_OPTS = "$env:FZF_DEFAULT_OPTS"
 
 Import-Module -Name Terminal-Icons
-oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\pure.omp.json" | Invoke-Expression
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\spaceship.omp.json" | Invoke-Expression
 
 $env:_ZO_FZF_OPTS = $env:FZF_DEFAULT_OPTS
 Invoke-Expression (& { (zoxide init powershell --cmd z | Out-String) })
@@ -58,6 +58,24 @@ Set-Alias -Name lg -Value lazygit
 Set-Alias -Name ldo -Value lazydocker
 Set-Alias cat bat
 
+# eza convenience aliases (constant) to avoid being overwritten by modules
+if (Get-Command eza -ErrorAction SilentlyContinue) {
+    # Remove any existing alias definitions
+    Remove-Item Alias:ls -ErrorAction SilentlyContinue
+    Remove-Item Alias:ll -ErrorAction SilentlyContinue
+
+    # Wrapper functions that include the desired default options and forward
+    # any additional arguments the user passes.
+    function eza_ls { & eza -a --icons @args }
+    function eza_ll { & eza -al --icons --hyperlink @args }
+
+    # Create constant aliases that point to the wrapper functions so they are
+    # hard to overwrite by imported modules.
+    New-Alias -Name ls -Value eza_ls -Option Constant
+    New-Alias -Name ll -Value eza_ll -Option Constant
+} else {
+    # eza not installed; leave placeholders or install via winget/choco/cargo
+}
 # Para ouch.exe
 # Nota: se ha compilado con
 # $env:RUSTFLAGS = "-C link-args=-Wl,--allow-multiple-definition"
@@ -75,3 +93,5 @@ $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 if (Test-Path($ChocolateyProfile)) {
     Import-Module "$ChocolateyProfile"
 }
+
+atuin init powershell | Out-String | Invoke-Expression
