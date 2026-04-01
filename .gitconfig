@@ -1,25 +1,25 @@
 [core]
-	editor = \"C:/Program Files (x86)/GitExtensions/GitExtensions.exe\" fileeditor
+	editor = nvim
 	sshCommand = \"C:/Windows/System32/OpenSSH/ssh.exe\"
+	pager = delta
 [pull]
 	rebase = false
 [fetch]
-	prune = false
+	prune = true
 [rebase]
 	autoStash = false
 [diff]
 	guitool = vscode
-[difftool "winmerge"]
-	path = C:/Program Files (x86)/WinMerge/winmergeu.exe
-	cmd = \"C:/Program Files (x86)/WinMerge/winmergeu.exe\" -e -u \"$LOCAL\" \"$REMOTE\"
-[difftool "vscode"]
-	path = C:/Program Files/Microsoft VS Code/code.exe
-	cmd = \"C:/Program Files/Microsoft VS Code/code.exe\" --wait --diff \"$LOCAL\" \"$REMOTE\"
+	tool = nvimdiff
+	colorMoved = default
+[difftool]
+  prompt = false
 [merge]
-	guitool = winmerge
-[mergetool "winmerge"]
-	path = C:/Program Files (x86)/WinMerge/winmergeu.exe
-	cmd = \"C:/Program Files (x86)/WinMerge/winmergeu.exe\" -e -u  -wl -wr -fm -dl \"Mine: $LOCAL\" -dm \"Merged: $BASE\" -dr \"Theirs: $REMOTE\" \"$LOCAL\" \"$BASE\" \"$REMOTE\" -o \"$MERGED\"
+	tool = nvimdiff
+	guitool = vscode
+	conflictstyle = diff3
+[mergetool]
+	prompt = false
 [credential "http://gitlab"]
 	provider = generic
 [user]
@@ -28,3 +28,10 @@
 [safe]
 	directory = C:/Users/japenedo/AppData/Local/nvim-data/lazy/*
 	directory = d:\\git\\dotfileswin\\
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+	line-numbers = true
+	side-by-side = false
+	width = variable
