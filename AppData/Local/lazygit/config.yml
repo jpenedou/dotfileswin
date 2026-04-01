@@ -1,6 +1,11 @@
 gui:
   nerdFontsVersion: "3"   # "2" o "3" -> si está vacío no muestra iconos
   showFileIcons: true
+git:
+  difftool: "nvimdiff"
+  pagers:
+    - externalDiffCommand: "\"C:/Program Files/Git/bin/bash.exe\" --noprofile --norc \"C:/Users/jpenedo/AppData/Local/lazygit/lazygit-pager.sh\""
+    # - externalDiffCommand: "pwsh -NoProfile -ExecutionPolicy Bypass -File \"C:/Users/jpenedo/AppData/Local/lazygit/lazygit-pager.ps1\""
 customCommands:
   - key: "G"
     context: "localBranches"
