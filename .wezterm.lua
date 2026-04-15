@@ -16,15 +16,65 @@ end -- This is where you actually apply your config choices
 -- config.color_schemes = {
 -- 	["Tokyo Night Moon"] = scheme,
 -- }
-config.color_scheme = "Tokyo Night Moon"
+config.color_scheme = "Tokyo Night"
+config.mux_enable_ssh_agent = false
 
-config.default_prog = { "pwsh" }
+local zellij = "C:\\Users\\jpenedo\\AppData\\Local\\Zellij\\zellij.exe"
+local pwsh = "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
 
--- config.font = wezterm.font("JetBrains Mono")
--- You can specify some parameters to influence the font selection;
--- for example, this selects a Bold, Italic font variant.
--- config.font = wezterm.font("CaskaydiaCove Nerd Font", { weight = "Regular", stretch = "Normal", style = "Normal" })
-config.font_size = 11
+config.default_prog = { pwsh, "-NoLogo" }
+
+wezterm.on("gui-startup", function(cmd)
+	local args = cmd and cmd.args
+	if args then
+		wezterm.mux.spawn_window(cmd)
+		return
+	end
+	local tab, pane, window = wezterm.mux.spawn_window({
+		args = { pwsh, "-NoLogo", "-NoProfile", "-Command", zellij },
+	})
+	window:gui_window():maximize()
+end)
+
+config.font = wezterm.font("CaskaydiaCove Nerd Font", {
+	weight = "Regular",
+	style = "Normal",
+	stretch = "Normal",
+})
+config.font_rules = {
+	{
+		intensity = "Bold",
+		italic = false,
+		font = wezterm.font("CaskaydiaCove Nerd Font", {
+			weight = "Bold",
+			style = "Normal",
+			stretch = "Normal",
+		}),
+	},
+	{
+		intensity = "Normal",
+		italic = true,
+		font = wezterm.font("CaskaydiaCove Nerd Font", {
+			weight = "Regular",
+			style = "Italic",
+			stretch = "Normal",
+		}),
+	},
+	{
+		intensity = "Bold",
+		italic = true,
+		font = wezterm.font("CaskaydiaCove Nerd Font", {
+			weight = "Bold",
+			style = "Italic",
+			stretch = "Normal",
+		}),
+	},
+}
+config.font_size = 12
+config.cell_width = 1.0
+config.exit_behavior = "CloseOnCleanExit"
+config.clean_exit_codes = { 0, 1 }
+config.exit_behavior_messaging = "None"
 config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
 
 -- This function returns the suggested title for a tab.
@@ -63,6 +113,7 @@ wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_wid
 end)
 -- config.enable_scroll_bar = true
 
-config.enable_kitty_graphics = true
+-- config.enable_kitty_graphics = false
+
 -- and finally, return the configuration to wezterm
 return config
