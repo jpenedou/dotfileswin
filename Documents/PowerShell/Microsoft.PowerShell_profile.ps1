@@ -37,8 +37,13 @@ function dotfiles {
 function lgd {
     $env:GIT_DIR = "$HOME\.dotfiles"
     $env:GIT_WORK_TREE = "$HOME"
-    lazygit
-    Remove-Item Env:\GIT_DIR, Env:\GIT_WORK_TREE
+
+    try {
+        lazygit
+    }
+    finally {
+        Remove-Item Env:\GIT_DIR, Env:\GIT_WORK_TREE -ErrorAction SilentlyContinue
+    }
 }
 function yzd {
     $tmp = [System.IO.Path]::GetTempFileName()
@@ -48,6 +53,10 @@ function yzd {
         Set-Location -LiteralPath ([System.IO.Path]::GetFullPath($cwd))
     }
     Remove-Item -Path $tmp
+}
+
+function zj {
+    zellij @args
 }
 
 $env:YAZI_FILE_ONE = "C:\Program Files\Git\usr\bin\file.exe"
