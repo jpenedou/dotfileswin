@@ -15,3 +15,7 @@ bind H tabprev
 bind L tabnext
 bind J back
 bind K forward
+bind <A-h> tabprev
+bind <A-l> tabnext
+bind <A-j> back
+bind <A-k> forward
